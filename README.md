@@ -32,3 +32,4 @@ http://localhost:5000
 
 После всего этого обрабатываем маршрути выдаем на / - нашу картинку.
 
+[![Python application](https://github.com/DarkShyMW/Random-batpony-generator/actions/workflows/python-app.yml/badge.svg)](https://github.com/DarkShyMW/Random-batpony-generator/actions/workflows/python-app.yml)
