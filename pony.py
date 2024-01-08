@@ -9,7 +9,8 @@ api_key = "ваш_код"
 
 # Ищем картинки на derpi
 def get_random_batpony_image():
-    url = f"https://derpibooru.org/api/v1/json/search?q=batpony%2Csafe&key={api_key}"
+    mypage = random.randint(1,1000)
+    url = f"https://derpibooru.org/api/v1/json/search?q=batpony%2Csafe&page={mypage}&key={api_key}"
     response = requests.get(url)
     data = response.json()
 
