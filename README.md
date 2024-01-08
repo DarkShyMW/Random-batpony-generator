@@ -2,8 +2,18 @@
 Ищет картинки и случайно выводит их на главной странице.
 
 ## Как установить?
+
 ```
 git clone https://github.com/DarkShyMW/Random-batpony-generator.git
+```
+
+Для начала регистрируемся на https://derpibooru.org/
+
+После всей процедуры регистрации открываем https://derpibooru.org/registrations/edit
+
+От туда копируем ваш api_key. Его вставляем в 8 строку - api_key = "тут_ваш_ключ"
+
+```
 pip3 install Flask
 pip3 install requests
 
