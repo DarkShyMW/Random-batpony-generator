@@ -5,7 +5,7 @@ import random
 app = Flask(__name__)
 
 # Пишем свой API-key из https://derpibooru.org/registrations/edit
-api_key = "nYTuAw8EHfHyfL6TgXPk"
+api_key = "ваш_код"
 
 # Ищем картинки на derpi
 def get_random_batpony_image():
