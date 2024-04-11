@@ -9,7 +9,7 @@ Bootstrap(app)
 
 
 # Пишем свой API-key из https://derpibooru.org/registrations/edit
-api_key = "nYTuAw8EHfHyfL6TgXPk"
+api_key = "ваш_токен"
 querry = 'batpony,safe,cute'
 
 # Ищем картинки на derpi
