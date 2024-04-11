@@ -1,16 +1,20 @@
 import requests
 from flask import Flask, render_template
 import random
+from flask_bootstrap import Bootstrap
+
 
 app = Flask(__name__)
+Bootstrap(app)
+
 
 # Пишем свой API-key из https://derpibooru.org/registrations/edit
-api_key = "ваш_код"
+api_key = "nYTuAw8EHfHyfL6TgXPk"
+querry = 'batpony,safe,cute'
 
 # Ищем картинки на derpi
 def get_random_batpony_image():
-    mypage = random.randint(1,1000)
-    url = f"https://derpibooru.org/api/v1/json/search?q=batpony%2Csafe&page={mypage}&key={api_key}"
+    url = f"https://derpibooru.org/api/v1/json/search?q={querry}%2Csafe&key={api_key}"
     response = requests.get(url)
     data = response.json()
 

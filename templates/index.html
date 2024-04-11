@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рандом бетпони поисковик</title>
+    <title>Batpony Image</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <style>
-      .container {
-        max-width: 600px;
-        max-height: 400px;
-        overflow: hidden;
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        padding-bottom: 10px;
       }
-      .batpony-image {
-        width: 30%;
-        height: 30%;
+      header {
+        text-align: center;
+        color: #eed70a;
+        background-color: #5d6469;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 10px;
+      }
+      main {
+        flex: 1;
+      }
+      footer {
+        text-align: center;
+        color: #eed70a;
+        padding: 1rem 0;
+        background-color: #5d6469;
+      }
+      span {
+        color:red;
       }
     </style>
-</head>
+  </head>
 <body>
-    <h1>Рандом бетпони поисковик</h1>
-    <content class="container">
-        <img class="batpony-image" src="{{ image_url }}" alt="Random Batpony Image">
-        <p>Источник: <a href="{{ view_url }}" target="_blank">{{ view_url }}</a></p>
-        <p>Теги: {{ tags }}</p>
-    </content>
-<footer>
-    <h3>Весь контент является публичным и случайно найденным для каждого пользователя. <br /> Администрация сайта не несет ответственности за картинки.</h3>
-</footer>
+  <header><h1>Random Pony Generator by Dark<span>Shy</span></h1></header>
+  <main>
+    <div class="container">
+        <div class="text-center">
+            <img src="{{ image_url }}" alt="Batpony Image" class="img-fluid">
+        </div>
+        <div class="text-center">
+            <p>Tags: {{ tags }}</p>
+            <a href="{{ view_url }}" target="_blank" class="btn btn-primary">Посмотреть на Derpibooru</a>
+        </div>
+    </div>
+  </main>
+    <footer><h3>Все права принадлежат поням.</h3> <br> <a href="https://github.com/DarkShyMW/Random-batpony-generator"><span>Исходный код</span></a></footer>
 </body>
 </html>
