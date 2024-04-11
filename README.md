@@ -14,8 +14,7 @@ git clone https://github.com/DarkShyMW/Random-batpony-generator.git
 От туда копируем ваш api_key. Его вставляем в 8 строку - api_key = "тут_ваш_ключ"
 
 ```
-pip3 install Flask
-pip3 install requests
+pip install flask requests flask_bootstrap
 
 cd /путь_до_папки/
 python3 pony.git
